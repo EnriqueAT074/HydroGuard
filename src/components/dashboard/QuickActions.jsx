@@ -26,8 +26,8 @@ const QuickActions = ({ onAddRecord }) => {
     },
     {
       icon: Leaf,
-      label: "Impacto",
-      action: () => navigate("/impacto"),
+      label: "Calcular",
+      action: () => navigate("/calculadora"),
       color: "text-green-500",
     },
   ];
