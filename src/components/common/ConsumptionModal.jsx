@@ -154,7 +154,7 @@ const ConsumptionModal = ({ onClose }) => {
                 isDarkMode ? "text-gray-300" : "text-gray-700"
               }`}
             >
-              Consumo (Litros)
+              Consumo (m³)
             </label>
             <div className="relative">
               <input
@@ -179,7 +179,7 @@ const ConsumptionModal = ({ onClose }) => {
                   isDarkMode ? "text-gray-400" : "text-gray-500"
                 }`}
               >
-                L
+                m³
               </span>
             </div>
           </div>

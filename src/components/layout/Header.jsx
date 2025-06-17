@@ -27,7 +27,7 @@ const Header = () => {
                 isDarkMode ? "text-white" : "text-gray-900"
               }`}
             >
-              HydroGuard
+              Qan Yaku
             </h1>
           </div>
         </div>

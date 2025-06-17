@@ -96,7 +96,7 @@ const Consumption = () => {
                   Año {year}
                 </span>
                 <span className="dark:bg-gray-600 text-gray-700 dark:text-gray-300 px-2 py-1 rounded-full text-xs">
-                  Promedio: {(data.total / data.count).toFixed(1)} Lts
+                  Promedio: {(data.total / data.count).toFixed(1)} m³
                 </span>
               </div>
               <div className="grid grid-cols-2 gap-2">
@@ -107,7 +107,7 @@ const Consumption = () => {
                   >
                     <span className="dark:text-gray-400">{record.month}</span>
                     <span className="font-medium dark:text-gray-300">
-                      {record.consumption} Lts
+                      {record.consumption} m³
                     </span>
                   </div>
                 ))}
@@ -124,13 +124,13 @@ const Consumption = () => {
         <div className="flex items-center justify-between p-3">
           <span className="dark:text-gray-400">Último mes:</span>
           <span className="font-medium dark:text-gray-300">
-            {history[0]?.consumption || 0} Lts
+            {history[0]?.consumption || 0} m³
           </span>
         </div>
         <div className="flex items-center justify-between p-3 dark:rounded">
           <span className="dark:text-gray-400">Hace 6 meses:</span>
           <span className="font-medium dark:text-gray-300">
-            {history[5]?.consumption || 0} Lts
+            {history[5]?.consumption || 0} m³
           </span>
         </div>
         <div
@@ -143,7 +143,7 @@ const Consumption = () => {
           {history[0]?.consumption < history[5]?.consumption
             ? `¡Estás ahorrando ${(
                 history[5].consumption - history[0].consumption
-              ).toFixed(1)} Lts!`
+              ).toFixed(1)} m³!`
             : "Puedes mejorar tu consumo"}
         </div>
       </div>
