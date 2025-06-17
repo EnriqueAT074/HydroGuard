@@ -30,18 +30,20 @@ const WaterGauge = ({ consumption, percentage, status }) => {
           <h2 className="text-xl font-semibold text-gray-100 dark:text-gray-50">
             Mi Consumo
           </h2>
-          <p className="text-gray-600 dark:text-gray-300">Este mes</p>
+          <p className="text-gray-600 dark:text-gray-300">
+            Este mes (3 personas){" "}
+          </p>
         </div>
         <div className="text-right">
           <div className="text-2xl font-bold text-gray-100 dark:text-gray-50">
             {consumption}
           </div>
-          <div className="text-gray-600 dark:text-gray-300">Litros</div>
+          <div className="text-gray-600 dark:text-gray-300">m³</div>
         </div>
       </div>
 
       <div className="mb-2 flex justify-between text-sm text-gray-600 dark:text-gray-300">
-        <span>Promedio: 100 Lts</span>
+        <span>Promedio: (100000) 100 m³</span>
         <span>{Math.round(percentage)}%</span>
       </div>
 
